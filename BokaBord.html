@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Boka Bord</title>
+    <link rel="stylesheet" href="Main.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap" rel="stylesheet">
+
+    <script>
+        function myFunction() {
+            confirm("Tack för din bokning! Kolla din mail för bekräftelse.");
+        }
+    </script>
+
+
+
+</head>
+
+<body id="bakgrund">
+
+    <h1><img src="furulundlogo.png" /></h1>
+
+    <ul id="mr">
+        <li><a href="index.html">HEM</a></li>
+        <li><a href="Meny.html">MENY</a></li>
+        <li>BOKA BORD</li>
+        <li><a href="VanligaFragor.html">VANLIGA FRÅGOR</a></li>
+    </ul>
+
+
+    <div class="contentbokabordruta">
+
+        <h3 id="språk"><span id="svenska">SV </span><span id="streck">-</span> <span id="engelska">ENG</span></h3>
+        <p></p>
+        <h3 id="språk"><span id="svenska">STANDARD </span><span id="streck">-</span> <span id="engelska">LÄTTLÄST</span></h3>
+
+        <h1 id="bokabordrubrik">FYLL I UPPGIFTER</h1>
+        <div class="contentbokabord">
+
+            <form>
+
+                <p style="margin-bottom:0;"><b>Namn:</b></p>
+                <input type="text" />
+
+                <p style="margin-bottom:0;"><b>Telefonnummer:</b></p>
+                <input type="text">
+
+                <p style="margin-bottom:0;"><b>Mejl:</b></p>
+                <input type="email">
+
+                <p style="margin-bottom:0;"><b>Antal platser:</b></p>
+                <input type="number" value="1" step="1" min="1" max="12">
+
+                <p style="margin-bottom:0;"><b>Datum:</b></p>
+                <input type="date">
+
+                <p style="margin-bottom:0;"><b>Övrigt:</b></p>
+                <textarea rows="10" cols="70">Skriv här...</textarea>
+
+            </form>
+
+        </div>
+        <div class="skickaposition">
+            <input id="skicka" type="submit" value="Skicka" onmouseup="myFunction();" background-color="black">
+        </div>
+
+    </div>
+
+
+
+    <div class="footer">
+
+        <div class="socialamedier">
+            <a href="https://www.facebook.com/"><img src="facebook.png" /></a>
+            <a href="https://www.instagram.com/"><img src="instagram.png" /></a>
+        </div>
+
+        <div class="footerkontaktaoss">
+            <p><b>Kontakta Oss:</b></p>
+            <p>031-44 83 83</p>
+            <p>Khaled@furulundspizzeria.com</p>
+            <p>Furulund centrum, 433 47, Partille</p>
+        </div>
+
+        <div class="footeröppettider">
+            <p><b>Öppettider:</b></p>
+            <p>Måndag-Torsdag: 10.00 - 21.00</p>
+            <p>Fredag-Lördag: 10.00 - 00.00</p>
+            <p>Söndag: 12.00 - 21.00</p>
+        </div>
+
+        <p style="float: right">Copyright@ Khaled</p>
+
+    </div>
+
+</body>
+</html>
